@@ -1,0 +1,14 @@
+{
+  "name": "cad-fluig",
+  "version": "1.0.0",
+  "description": "Register sevices on Platform Fluig",
+  "main": "server.js",
+  "repository": "https://github.com/rsv6/cad-fluig",
+  "author": "rsv6 and flavion",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mssql": "^6.3.1"
+  }
+}
