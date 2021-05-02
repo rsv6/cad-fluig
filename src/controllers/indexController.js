@@ -1,21 +1,9 @@
 require('dotenv/config')
-const env = process.env
-const conn = require(env.PTH_CONN)
 
 const get = async (req, res) => {
-  
-  const sql = 'SELECT * FROM plataforma'
-  await conn.query(sql, (err, result) => {
-    
-    if(err) return console.log(err.message)
-
-    const data = result.recordset
-
-    console.log(`Get data with success!`)
-    res.json(data)
-  })
+    console.log(`Accessed route ${req.url}`)
+    res.send("<h1><center>Hello, welcome to <span style='color:blue'>API-DATA-FLUIG!</span> We are in development!</center></h1>")
 }
-
 module.exports = {
   get
 }
