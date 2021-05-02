@@ -1,6 +1,6 @@
 require('dotenv/config')
 const router = require('express').Router()
 
-router.get('/api/select', require(process.env.PTH_CTRL+'selectAllController.js').get)
+router.get('/api/select/:id', require(process.env.PTH_CTRL+'selectIdController.js').get)
 
 module.exports = router
