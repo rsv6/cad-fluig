@@ -11,6 +11,6 @@ router.get('/', (req, res) => {
 // ROUTES OF API:
 router.use('/', require('./plataforma'))
 router.use('/', require('./servico'))
-// router.use('/', require('./motivo'))
+router.use('/', require('./motivo'))
 
 module.exports = router

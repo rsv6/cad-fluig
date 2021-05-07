@@ -28,7 +28,7 @@ const post = async (req, res) => {
 
       console.log(`Accessed route: ${data} - method: POST`)
       console.log(`Servico: ${data.descricao} add successfully!`)
-      res.json(data)
+      res.end()
     })
 }
 
