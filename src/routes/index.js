@@ -1,13 +1,16 @@
 const router = require('express').Router()
 
 // HOME:
-router.use('/', require('./home'))
+router.get('/', (req, res) => {
+  console.log(`Accessed route: ${req.url}`)
+    res.send(`<h1><center>Hello, welcome to 
+    <span style='color:blue'>API-DATA-FLUIG!</span> 
+    We are in development!</center></h1>`)
+})
 
-// CRUD:
-router.use('/', require('./selectAll'))
-// router.use('/', require('./select'))
-// router.use('/', require('./insert'))
-router.use('/', require('./update'))
-// router.use('/', require('./delete'))
+// ROUTES OF API:
+router.use('/', require('./plataforma'))
+router.use('/', require('./servico'))
+// router.use('/', require('./motivo'))
 
 module.exports = router
